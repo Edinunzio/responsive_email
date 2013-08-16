@@ -46,19 +46,56 @@
                 padding-right: 0 !important;
             }
 
+            td[class="logo"] {
+                display: block;
+                height: 31px !important;
+                width: 320px !important;
+                background-image: url(images/dy_20130815_header_logo.jpg) !important;
+            }
+
+            a[class="women"] {
+                display: block;
+                height: 29px !important;
+                width: 103px !important;
+                background-image: url(images/DY_EMAIL_8_15_women.jpg) !important;
+            }
+
+            a[class="men"] {
+                display: block;
+                height: 29px !important;
+                width: 97px !important;
+                background-image: url(images/DY_EMAIL_8_15_men.jpg) !important;
+            }
+
+            a[class="timepieces"] {
+                display: block;
+                height: 29px !important;
+                width: 120px !important;
+                margin-left: -1px !important;
+                background-image: url(images/DY_EMAIL_8_15_timepieces.jpg) !important;
+            }
+
             td[class="hero1"] {
                 display: block;
                 height: 402px !important;
                 width: 320px !important;
-                background-image: url(images/DY_EMAIL_20130815_01.jpg) !important;/* test image til i cut up the mobile */
+                background-image: url(images/DY_EMAIL_20130815_01.jpg) !important;
             }
+            
             td[class="hero2"] {
                 display: block;
                 height: 320px !important;
                 width: 320px !important;
-                background-image: url(images/DY_EMAIL_20130815_02.jpg) !important;/* test image til i cut up the mobile */
+                background-image: url(images/DY_EMAIL_20130815_02.jpg) !important;
             }
-            a[class="hide"]{
+
+            td[class="store"] {
+                height: 57px;
+                width: 320px;
+                background-image: url(images/DY_EMAIL_8_15_store_b.jpg);
+            }
+
+            a[class="hide"], img[class="hide"]{
                 display: none !important;
             }
 
@@ -87,7 +124,7 @@
             <a href="#">
                 <table border="0" cellpadding="0" cellspacing="0" class="columns-container">
                   <tr>
-                    <td style="height:58px; width:640px;background-image: url(images/DY_EMAIL_8_15__logo.jpg);">
+                    <td class="logo" style="height:58px; width:640px;background-image: url(images/DY_EMAIL_8_15__logo.jpg);">
                     </td>
                   </tr>
                 </table>
@@ -99,22 +136,22 @@
             <table border="0" cellpadding="0" cellspacing="0" class="columns-container">
               <tr>
                 <td>
-                    <a href="#" style="display:block; height:42px; width:101px;background-image: url(images/dy_20130815_header_women.jpg);"></a>
+                    <a href="#" class="women" style="display:block; height:42px; width:101px;background-image: url(images/dy_20130815_header_women.jpg);"></a>
                  </td>
                  <td>
-                    <a href="#" style="display:block; height:42px; width:90px;background-image: url(images/dy_20130815_header_men.jpg);"></a>
+                    <a href="#" class="men" style="display:block; height:42px; width:90px;background-image: url(images/dy_20130815_header_men.jpg);"></a>
                  </td>
                  <td>
-                    <a href="#" style="display:block; height:42px; width:106px;background-image: url(images/dy_20130815_header_timepieces.jpg);"></a>
+                    <a href="#" class="timepieces" style="display:block; height:42px; width:104px;background-image: url(images/dy_20130815_header_timepieces.jpg);"></a>
                  </td>
                  <td>
-                    <a href="#" class="hide" style="display:block; height:42px; width:145px;background-image: url(images/dy_20130815_header_collections.jpg);"></a>
+                    <a href="#" class="hide" style="display:block; height:42px; width:146px;background-image: url(images/dy_20130815_header_collections.jpg);"></a>
                  </td>
                  <td>
                     <a href="#" class="hide" style="display:block; height:42px; width:93px;background-image: url(images/dy_20130815_header_gifts.jpg);"></a>
                  </td>
                  <td>
-                    <a href="#" class="hide" style="display:block; height:42px; width:105px;background-image: url(images/dy_20130815_header_wedding.jpg);"></a>
+                    <a href="#" class="hide" style="display:block; height:42px; width:106px;background-image: url(images/dy_20130815_header_wedding.jpg);"></a>
                  </td>
              </tr>
             </table>
@@ -151,16 +188,18 @@
             
             <table border="0" cellpadding="0" cellspacing="0" class="columns-container">
               <tr>
-                <td class="force-col" style="height:34px; width:320px; background-color: #1d1b1c;">
-                    <a href="#"><img src="images/DY_EMAIL_8_15_store.jpg" /></a>
+                <td class="force-col store" style="height:34px; width:428px; background-color: #1d1b1c;">
+                    <a href="#"><img class="hide" src="images/DY_EMAIL_8_15_store.jpg" /></a>
                 </td>
-                <td class="force-col" v-align="center" style="height:34px; width:320px;background-color: #1d1b1c; ">
-                    <img src="images/DY_EMAIL_8_15_follow.jpg" />
-                    <a href="#"><img src="images/DY_EMAIL_8_15_fb.jpg" /></a>
-                    <a href="#"><img src="images/DY_EMAIL_8_15_tw.jpg" /></a>
-                    <a href="#"><img src="images/DY_EMAIL_8_15_yt.jpg" /></a>
-                    <a href="#"><img src="images/DY_EMAIL_8_15_pin.jpg" /></a>
-                    <a href="#"><img src="images/DY_EMAIL_8_15_insta.jpg" /></a>
+                <td class="force-col follow" style="height:34px; width:72px; background-color: #1d1b1c; text-align:right;">
+                    <img class="hide" src="images/DY_EMAIL_8_15_follow.jpg" />
+                </td>
+                <td class="force-col social_media" style="height:34px; width:140px; background-color: #1d1b1c; text-align:right;">
+                    <a href="#"><img class="hide" src="images/DY_EMAIL_8_15_fb.jpg" /></a>
+                    <a href="#"><img class="hide" src="images/DY_EMAIL_8_15_tw.jpg" /></a>
+                    <a href="#"><img class="hide" src="images/DY_EMAIL_8_15_yt.jpg" /></a>
+                    <a href="#"><img class="hide" src="images/DY_EMAIL_8_15_pin.jpg" /></a>
+                    <a href="#"><img class="hide" src="images/DY_EMAIL_8_15_insta.jpg" /></a>
                 </td>
               </tr>
             </table>
